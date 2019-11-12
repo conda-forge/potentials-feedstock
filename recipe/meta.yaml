@@ -10,7 +10,6 @@ source:
   sha256: 0642862f0a4b53371312da7e532cabb599279465025e7eeb494c34818d69afcf
 
 build:
-  noarch: python
   number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [py2k]
