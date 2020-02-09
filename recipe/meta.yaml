@@ -1,5 +1,5 @@
 {% set name = "potentials" %}
-{% set version = "0.0.1" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0642862f0a4b53371312da7e532cabb599279465025e7eeb494c34818d69afcf
+  sha256: 4564d3b3c83635a69da7a8d4ea15cd28452bb8b9f1be726961de3f3380a5cbe7
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [py2k]
 
@@ -28,6 +28,10 @@ requirements:
     - requests
     - habanero
     - bibtexparser
+    - cdcs
+    - ipython
+    - ipywidgets
+    - scipy
 
 test:
   imports:
