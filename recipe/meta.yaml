@@ -29,6 +29,7 @@ requirements:
     - habanero
     - bibtexparser
     - cdcs
+    - ipython
 
 test:
   imports:
