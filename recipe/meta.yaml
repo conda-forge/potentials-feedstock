@@ -30,6 +30,7 @@ requirements:
     - bibtexparser
     - cdcs
     - ipython
+    - ipywidgets
 
 test:
   imports:
