@@ -10,7 +10,7 @@ source:
   sha256: 4564d3b3c83635a69da7a8d4ea15cd28452bb8b9f1be726961de3f3380a5cbe7
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [py2k]
 
@@ -23,7 +23,7 @@ requirements:
     - xmltodict
     - datamodeldict
     - numpy
-    - matplotlib
+    - matplotlib-base
     - pandas
     - requests
     - habanero
