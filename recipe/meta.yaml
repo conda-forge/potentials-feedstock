@@ -20,6 +20,7 @@ requirements:
     - pip
   run:
     - python
+    - pip
     - xmltodict
     - datamodeldict
     - numpy
@@ -36,6 +37,8 @@ requirements:
 test:
   imports:
     - potentials
+  commands:
+    - pip check
 
 about:
   home: https://github.com/usnistgov/potentials
