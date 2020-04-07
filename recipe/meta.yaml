@@ -1,5 +1,5 @@
 {% set name = "potentials" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4564d3b3c83635a69da7a8d4ea15cd28452bb8b9f1be726961de3f3380a5cbe7
+  sha256: a291ef80ab789baaf33dfed1320fb66be1bba5964988b3aef98237df9deffbc1
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py2k]
 
 requirements:
@@ -45,7 +45,7 @@ about:
   license: OTHER
   license_family: OTHER
   license_file: LICENSE.TXT
-  summary: 'Alternative host of Interatomic Potentials Repository content'
+  summary: Alternative host of Interatomic Potentials Repository content
 
   description: |
     Potentials provides a lightweight database of interatomic potentials 
