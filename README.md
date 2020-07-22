@@ -5,7 +5,7 @@ Home: https://github.com/usnistgov/potentials
 
 Package license: OTHER
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Alternative host of Interatomic Potentials Repository content
 
