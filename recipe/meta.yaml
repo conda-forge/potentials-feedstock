@@ -1,5 +1,5 @@
 {% set name = "potentials" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e834c4e57a42809d26304a2bd486968df97f0aea2e012467c40881a2e28324db
+  sha256: 0d5506ce9183586c288e14860916f2456932e1b92e99687eafb05ab55aaf766a
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - requests
     - habanero
     - bibtexparser
-    - cdcs
+    - cdcs =0.1.4
     - ipython
     - ipywidgets
     - scipy
