@@ -1,5 +1,5 @@
 {% set name = "potentials" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4f6d4e2c4faf30d7051edfbf0576612bf892a61af23ddbe98618d83036a03616
+  sha256: f9af2fbd910f47bb157dcc0f8611a63739e2e8ce008e157cd8ea3d86ae445aca
 
 build:
   number: 0
