@@ -1,5 +1,5 @@
 {% set name = "potentials" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f9af2fbd910f47bb157dcc0f8611a63739e2e8ce008e157cd8ea3d86ae445aca
+  sha256: a66f10133aa1405ef0e34a21e5e26af60723247ebe202c0203d7abc91c211f03
 
 build:
   number: 1
@@ -22,6 +22,7 @@ requirements:
     - python
     - pip
     - xmltodict
+    - unidecode
     - datamodeldict
     - numpy
     - matplotlib-base
