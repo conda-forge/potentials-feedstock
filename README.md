@@ -3,20 +3,20 @@ About potentials
 
 Home: https://github.com/usnistgov/potentials
 
-Package license: OTHER
+Package license: NIST-PD
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/potentials-feedstock/blob/master/LICENSE.txt)
 
-Summary: Alternative host of Interatomic Potentials Repository content
+Summary: API for accessing the NIST Interatomic Potentials Repository.
 
 Development: https://github.com/usnistgov/potentials
 
 Documentation: https://github.com/usnistgov/potentials
 
-Potentials provides a lightweight database of interatomic potentials
-and force fields. Right now, the database contains listings for the
-potentials stored in the NIST Interatomic Potentials Repository, as
-well as about 75% of OpenKIM models.
+The potentials package provides a Python-based interface to the content
+on the NIST Interatomic Potentials Repository. The package directly
+interacts with the underlying database at https://potentials.nist.gov/
+allowing for the hosted interatomic potentials to be searched and explored.
 
 
 Current build status
@@ -37,13 +37,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_python3.7.____cpythonpython_implcpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8402&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/potentials-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.7.____cpythonpython_implcpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_python3.8.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8402&branchName=master">
@@ -58,13 +51,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.7.____cpythonpython_implcpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8402&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/potentials-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.7.____cpythonpython_implcpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_python3.8.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8402&branchName=master">
@@ -76,13 +62,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8402&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/potentials-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.9.____cpythonpython_implcpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8402&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/potentials-feedstock?branchName=master&jobName=win&configuration=win_64_python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
