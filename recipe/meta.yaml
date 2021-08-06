@@ -30,7 +30,7 @@ requirements:
     - requests
     - habanero
     - bibtexparser
-    - cdcs =0.1.4
+    - cdcs =0.1.5
     - ipython
     - ipywidgets
     - scipy
