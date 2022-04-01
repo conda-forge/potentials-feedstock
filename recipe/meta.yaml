@@ -37,6 +37,7 @@ requirements:
     - importlib_resources
     - lxml
     - yabadaba
+    - setuptools >=60
 
 test:
   imports:
