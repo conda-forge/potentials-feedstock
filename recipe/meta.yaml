@@ -36,6 +36,7 @@ requirements:
     - scipy
     - importlib_resources
     - lxml
+    - yabadaba
 
 test:
   imports:
