@@ -27,16 +27,16 @@ requirements:
     - numpy
     - matplotlib-base
     - pandas
+    - cdcs
     - requests
     - habanero
     - bibtexparser
-    - cdcs =0.1.5
     - ipython
     - ipywidgets
     - scipy
     - importlib_resources
     - lxml
-    - yabadaba
+    - yabadaba >=0.2.1
     - setuptools >=60
 
 test:
