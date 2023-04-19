@@ -1,5 +1,5 @@
 {% set name = "potentials" %}
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7b6f98ae0a63e82cbbeaacf0f7f3610eaf6882c35000970a8bd92f6367d913e9
+  sha256: 5443c66b75a9f81dcab5eadf0395c68da0dfeac200912493d0659d7aa689704d
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<=37 or python_impl == 'pypy']
 
@@ -27,16 +27,16 @@ requirements:
     - numpy
     - matplotlib-base
     - pandas
+    - cdcs
     - requests
     - habanero
     - bibtexparser
-    - cdcs =0.1.5
     - ipython
     - ipywidgets
     - scipy
     - importlib_resources
     - lxml
-    - yabadaba
+    - yabadaba >=0.2.0
     - setuptools >=60
 
 test:
