@@ -28,7 +28,7 @@ requirements:
     - numpy
     - matplotlib-base
     - pandas
-    - cdcs
+    - cdcs >=0.2.5
     - requests
     - habanero
     - bibtexparser
