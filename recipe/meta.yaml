@@ -10,7 +10,7 @@ source:
   sha256: eee8dc7c56bf730794b4263632b121ddb4e4c00573bdb17ee402787ece68e9b1
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<=37 or python_impl == 'pypy']
 
@@ -18,6 +18,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
     - pip
@@ -27,7 +28,7 @@ requirements:
     - numpy
     - matplotlib-base
     - pandas
-    - cdcs
+    - cdcs >=0.2.5
     - requests
     - habanero
     - bibtexparser
@@ -36,7 +37,7 @@ requirements:
     - scipy
     - importlib_resources
     - lxml
-    - yabadaba >=0.2.1
+    - yabadaba >=0.3.1
     - setuptools >=60
 
 test:
