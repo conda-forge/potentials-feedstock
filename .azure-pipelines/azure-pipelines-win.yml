@@ -26,6 +26,7 @@ jobs:
   timeoutInMinutes: 360
   variables:
     CONDA_BLD_PATH: D:\\bld\\
+    MINIFORGE_HOME: D:\Miniforge
     UPLOAD_TEMP: D:\\tmp
 
   steps:
@@ -51,6 +52,8 @@ jobs:
         call ".scripts\run_win_build.bat"
       displayName: Run Windows build
       env:
+        MINIFORGE_HOME: $(MINIFORGE_HOME)
+        CONDA_BLD_PATH: $(CONDA_BLD_PATH)
         PYTHONUNBUFFERED: 1
         CONFIG: $(CONFIG)
         CI: azure
