@@ -1,18 +1,21 @@
-{% set name = "potentials" %}
-{% set version = "0.4.2" %}
+schema_version: 1
+
+context:
+  name: potentials
+  version: "0.4.2"
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: b5ee4aea363166e4c516bce54962ce4d81c91368dbf3b70e5c0a9f9c9038da68
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<=37 or python_impl == 'pypy']
+  number: 1
+  skip: match(python, "<=3.7") or python_impl == 'pypy'
+  script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -40,25 +43,24 @@ requirements:
     - yabadaba >=0.3.1
     - setuptools >=60
 
-test:
-  imports:
-    - potentials
-  commands:
-    - pip check
+tests:
+  - python:
+      imports:
+        - potentials
+      pip_check: true
 
 about:
-  home: https://github.com/usnistgov/potentials
   license: NIST-PD
   license_file: LICENSE.TXT
   summary: API for accessing the NIST Interatomic Potentials Repository.
-
   description: |
     The potentials package provides a Python-based interface to the content
     on the NIST Interatomic Potentials Repository. The package directly
     interacts with the underlying database at https://potentials.nist.gov/
     allowing for the hosted interatomic potentials to be searched and explored.
-  doc_url: https://github.com/usnistgov/potentials
-  dev_url: https://github.com/usnistgov/potentials
+  homepage: https://github.com/usnistgov/potentials
+  repository: https://github.com/usnistgov/potentials
+  documentation: https://github.com/usnistgov/potentials
 
 extra:
   recipe-maintainers:
